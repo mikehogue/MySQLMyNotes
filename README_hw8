@@ -1,0 +1,83 @@
+Authors:
+    Michael Hogue      (hogue)
+    Logan   Chadderdon (lwchadd)
+
+
+The extra credit features that we implemented are detailed on the
+`Features.jsp` page, available at `/MyNotes/JSP/Features.jsp`, and are also
+included below for reference.
+
+The files that we added in the `MyNotes` directory are:
+    header.jsp            - Common header partial used on all pages
+    index.jsp             - Changed to a JSP to make it more robust
+    JSP/AddBoard.jsp      - Extra feature to add a board
+    JSP/Features.jsp      - Explains the extra features that we've implemented
+    JSP/Subscribe.jsp     - List subscriptions and subcribe to a board
+    sql_scripts/          - Directory with all the SQL scripts
+    sql_scripts/login.sql - Automatically runs destroy, create, and populate
+                            when you login to `sqlpl` in that directory
+
+All of the extra technologies that we used are client-side:
+    Foundation, jQuery, and Select2
+
+
+We hope you like it!
+
+
+======================== Information from Features.jsp =========================
+
+Style
+    The whole site has been styled using the Foundation framework.
+
+Client-side Validation
+    Basic validation is done client-side when possible (as well as
+    server-side). An example of this is on the Add Profile Information page
+    where the email field helps ensure that a valid email address is entered.
+
+Improved Forms
+    All of the forms have been updated to use the most appropriate HTML input
+    types. A good example of this is on the Add Card page. The Description
+    field is now a textarea to allow easier multi-line input. Date is a date
+    input type which displays a gui datepicker on supporting browsers like
+    Chrome. This validates the user's date input and makes it quicker and
+    easier to enter.
+
+Working Logout
+    We've made it possible to logout of the system, removing the user's
+    credentials from the session. Trying to access any vital page while not
+    logged in will redirect the user back to the login screen.
+
+Add Board
+    We've made it possible to add a board to the system. It handles various
+    error situations such as not being logged in, trying to insert a board with
+    an empty name, or trying to insert a board that already exists.
+
+Subscribe to a Board
+    We've made it possible to subscribe to a board. The page also lists all of
+    the boards that the current user is subscribed to. It handles error
+    situations like trying to subscribe to a board that doesn't exist or to one
+    that is already subscribed to.
+
+Show user name in title
+    Take a look at the title of various pages (such as the main menu) to see
+    the name of the current user. The login page is also smart enough to
+    determine if a user is already logged in and will display a greeting if
+    they are.
+
+Persistent header and navigation
+    There is a consistent header across all pages that includes navigation
+    links and a logout button. The code for the header was modularized and put
+    into a header.jsp file that is included in every page. This allows for a
+    consistent look between pages, extremely easy navigation, and makes changes
+    easier to implement. The site title can be clicked to return to the login
+    page. Irrelevant buttons are hidden on certain pages, such as the logout
+    button on the login page when the user is not logged in.
+
+Board Name Autocomplete
+    The Board Name inputs on Add Card and Subscribe feature auto-completing
+    selection dropdowns. The one on Subscribe only shows the boards that the
+    user is not already subscribed to.
+
+Features Page
+    This very page is included to help graders find the extra features that
+    we've implemented.
