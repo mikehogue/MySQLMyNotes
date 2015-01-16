@@ -9,7 +9,7 @@
 %>
 <%
 if(session.getAttribute("login") == null) {
-    response.sendRedirect("/MyNotes?error=You must be logged in to add a Board");
+    response.sendRedirect("/?error=You must be logged in to add a Board");
 }
 email = (String) session.getAttribute("email");
 userName = (String) session.getAttribute("user");

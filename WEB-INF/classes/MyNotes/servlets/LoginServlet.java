@@ -5,7 +5,6 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import MyNotes.servlets.*;
-import MyNotes.utils.*;
 import java.sql.*;
 
 public class LoginServlet extends HttpServlet
@@ -90,7 +89,7 @@ public class LoginServlet extends HttpServlet
     public void drawLoginFail(HttpServletRequest req, HttpServletResponse res, PrintWriter out, String error) throws ServletException, IOException
     {
         //instead of displaying the error here, we will go back to login page
-        res.sendRedirect("/MyNotes?error=" + error);
+        res.sendRedirect("/?error=" + error);
     }
 
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException
@@ -107,7 +106,7 @@ public class LoginServlet extends HttpServlet
             session.removeAttribute("login");
             session.removeAttribute("user");
             session.removeAttribute("email");
-            res.sendRedirect("/MyNotes");
+            res.sendRedirect("/");
             
             //end the request here
             return;

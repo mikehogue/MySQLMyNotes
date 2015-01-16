@@ -47,7 +47,7 @@
       <p>
       Basic validation is done client-side when possible (as well as
       server-side). An example of this is on the
-      <a href="/MyNotes/AddProfileInformation">Add Profile Information</a> page
+      <a href="/AddProfileInformation">Add Profile Information</a> page
       where the email field helps ensure that a valid email address is entered.
       </p>
 
@@ -55,7 +55,7 @@
       <p>
       All of the forms have been updated to use the most appropriate HTML input
       types. A good example of this is on the
-      <a href="/MyNotes/AddCard">Add Card</a> page. The Description field is
+      <a href="/AddCard">Add Card</a> page. The Description field is
       now a textarea to allow easier multi-line input. Date is a date input
       type which displays a gui datepicker on supporting browsers like Chrome.
       This validates the user's date input and makes it quicker and easier to enter.
@@ -64,7 +64,7 @@
       <h3 id="logout" data-magellan-destination="logout">Working Logout</h3>
       <p>
       We've made it possible to
-      <a href="/MyNotes/LoginServlet?logoutMyNotes=Logout">logout</a> of the
+      <a href="/LoginServlet?logoutMyNotes=Logout">logout</a> of the
       system, removing the user's credentials from the session.  Trying to
       access any vital page while not logged in will redirect the user back to
       the login screen.
@@ -73,7 +73,7 @@
       <h3 id="addBoard" data-magellan-destination="addBoard">Add Board</h3>
       <p>
       We've made it possible to
-      <a href="/MyNotes/JSP/AddBoard.jsp">add a board</a> to the system. It
+      <a href="/JSP/AddBoard.jsp">add a board</a> to the system. It
       handles various error situations such as not being logged in, trying to
       insert a board with an empty name, or trying to insert a board that
       already exists.
@@ -82,7 +82,7 @@
       <h3 id="subscribe" data-magellan-destination="subscribe">Subscribe to a Board</h3>
       <p>
       We've made it possible to
-      <a href="/MyNotes/JSP/Subscribe.jsp">subscribe to a board</a>. The page
+      <a href="/JSP/Subscribe.jsp">subscribe to a board</a>. The page
       also lists all of the boards that the current user is subscribed to. It
       handles error situations like trying to subscribe to a board that doesn't
       exist or to one that is already subscribed to.
@@ -91,7 +91,7 @@
       <h3 id="title" data-magellan-destination="title">Show user name in title</h3>
       <p>
       Take a look at the title of various pages (such as the
-      <a href="/MyNotes/LoginServlet?MainMenu=Main+Menu">main menu</a>) to see
+      <a href="/LoginServlet?MainMenu=Main+Menu">main menu</a>) to see
       the name of the current user. The login page is also smart enough to
       determine if a user is already logged in and will display a greeting if
       they are.
@@ -111,10 +111,10 @@
 
       <h3 id="autocomplete" data-magellan-destination="autocomplete">Board Name Autocomplete</h3>
       <p>
-      The Board Name inputs on <a href='/MyNotes/AddCard'>Add Card</a> and
-      <a href='/MyNotes/JSP/Subscribe.jsp'>Subscribe</a> feature
+      The Board Name inputs on <a href='/AddCard'>Add Card</a> and
+      <a href='/JSP/Subscribe.jsp'>Subscribe</a> feature
       auto-completing selection dropdowns. The one on
-      <a href='/MyNotes/JSP/Subscribe.jsp'>Subscribe</a> only shows the boards
+      <a href='/JSP/Subscribe.jsp'>Subscribe</a> only shows the boards
       that the user is not already subscribed to.
       </p>
 

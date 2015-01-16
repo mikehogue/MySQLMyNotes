@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html" %>
-<%@ page import="java.io.*, java.util.*, javax.servlet.*, javax.servlet.http.*, java.sql.*, MyNotes.utils.*" %>
+<%@ page import="java.io.*, java.util.*, javax.servlet.*, javax.servlet.http.*, java.sql.*" %>
 
 
 <!doctype html>
 <html>
   <head>
     <meta http-equiv=Content-Type content="text/html">
-    <title>My Notes</title>
+    <title>My Notes!</title>
     <% if(session.getAttribute("login") == null) { %>
     <style>
     .mainMenuNav, .logoutNav {

@@ -6,7 +6,6 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.sql.*;
 import MyNotes.servlets.*;
-import MyNotes.utils.*;
 
 
 public class AddProfileInformation extends HttpServlet
@@ -139,7 +138,7 @@ public class AddProfileInformation extends HttpServlet
         out.println("<input class='small radius button' type='submit' name='Submit' value='Insert'>");
         out.println("</form>");
 
-        out.println("<form action='/MyNotes' method='post'>");
+        out.println("<form action='/' method='post'>");
         out.println("<input class='tiny radius secondary button' type='submit' value='Cancel'>");
         out.println("</form>");
     }

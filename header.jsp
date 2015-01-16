@@ -36,29 +36,29 @@ body {
   <nav class="top-bar" data-topbar>
     <ul class="title-area">
       <li class="name">
-      <h1><a href="/MyNotes">MyNotes <small>A UA Project Management Program</small></a></h1>
+      <h1><a href="/">MyNotes <small>A UA Project Management Program</small></a></h1>
       </li>
     </ul>
     <section class="top-bar-section">
       <ul class="right">
         <li class="divider featuresNav"></li>
         <li class="featuresNav">
-          <a href="/MyNotes/JSP/Features.jsp">Features</a>
+          <a href="/JSP/Features.jsp">Features</a>
         </li>
         <li class="divider mainMenuNav"></li>
         <li class="mainMenuNav has-dropdown">
-          <a href="/MyNotes/LoginServlet?MainMenu=Main+Menu">Main Menu</a>
+          <a href="/LoginServlet?MainMenu=Main+Menu">Main Menu</a>
           <ul class="dropdown">
-            <li><a href="/MyNotes/AddCard">Add a Card</a></li>
-            <li><a href="/MyNotes/FindBoards">Find Boards</a></li>
-            <li><a href="/MyNotes/JSP/SharedAssignment.jsp">Shared Cards</a></li>
-            <li><a href="/MyNotes/JSP/AddBoard.jsp">Add Board</a></li>
-            <li><a href="/MyNotes/JSP/Subscribe.jsp">Subscribe to a Board</a></li>
+            <li><a href="/AddCard">Add a Card</a></li>
+            <li><a href="/FindBoards">Find Boards</a></li>
+            <li><a href="/JSP/SharedAssignment.jsp">Shared Cards</a></li>
+            <li><a href="/JSP/AddBoard.jsp">Add Board</a></li>
+            <li><a href="/JSP/Subscribe.jsp">Subscribe to a Board</a></li>
           </ul>
         </li>
         <li class="divider logoutNav"></li>
         <li class="logoutNav">
-          <a href="/MyNotes/LoginServlet?logoutMyNotes=Logout">Logout</a>
+          <a href="/LoginServlet?logoutMyNotes=Logout">Logout</a>
         </li>
       </ul>
     </section>

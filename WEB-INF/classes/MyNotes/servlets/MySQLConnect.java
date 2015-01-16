@@ -1,4 +1,4 @@
-package MyNotes.utils;
+package MyNotes.servlets;
 
 import java.util.*;
 
@@ -7,16 +7,18 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.sql.*;
 public class MySQLConnect {
-    public static final String connect_string = "jdbc:mysql://127.13.50.2:3306/mikehogue";
-    public static final String user_name = "adminSLMrZdy";
-    public static final String password = "M9wH6K-IlmtY";
+    public static final String user_name = "nope";
+    public static final String password = "nope";
     public Connection connection;
     
     public Connection getConnection() {
         try {
             Class.forName("com.mysql.jdbc.Driver"); // Registers drivers
 
-            this.connection = DriverManager.getConnection(connect_string, user_name, password); // get a connection
+            String host = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
+            String port = System.getenv("OPENSHIFT_MYSQL_DB_PORT");
+            String url = String.format("jdbc:mysql://%s:%s/mysqlmynotes", host, port);
+            this.connection = DriverManager.getConnection(url, user_name, password); // get a connection
             if(connection == null) {
                 throw new Exception("getConnection failed!");
             }

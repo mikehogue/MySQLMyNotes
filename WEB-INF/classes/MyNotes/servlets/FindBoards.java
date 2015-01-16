@@ -5,7 +5,6 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import MyNotes.servlets.*;
 import java.sql.*;
-import MyNotes.utils.*;
 
 public class FindBoards extends HttpServlet {
 
@@ -148,7 +147,7 @@ public class FindBoards extends HttpServlet {
 
         if(session.getAttribute("login") == null) {
             //we are not logged in
-            res.sendRedirect("/MyNotes");
+            res.sendRedirect("/");
         }
         drawHeader(req, res, out);
 

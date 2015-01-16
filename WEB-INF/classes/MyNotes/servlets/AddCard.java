@@ -6,7 +6,6 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.sql.*;
 import MyNotes.servlets.*;
-import MyNotes.utils.*;
 
 
 public class AddCard extends HttpServlet {
@@ -270,7 +269,7 @@ public class AddCard extends HttpServlet {
         session = req.getSession(true);
         if(session.getAttribute("login") == null) {
             //we are not logged in
-            res.sendRedirect("/MyNotes");
+            res.sendRedirect("/");
         }
         if(req.getParameter("Submit") == null)
         {

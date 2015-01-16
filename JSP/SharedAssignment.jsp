@@ -12,7 +12,7 @@
 <%--Redirect to the login page if the user is not logged in--%>
 <%
 if(session.getAttribute("login") == null) {
-    response.sendRedirect("/MyNotes");
+    response.sendRedirect("/");
 }
 userName = (String) session.getAttribute("user");
 %>
